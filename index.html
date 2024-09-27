@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Avatar Maker</title>
+</head>
+<body>
+    <h1>Avatar Maker</h1>
+    <div id="avatar-container">
+        <img id="background" class="layer" alt="Background">
+        <img id="head" class="layer" alt="Head">
+        <img id="face" class="layer" alt="Face">
+        <img id="hair" class="layer" alt="Hair">
+    </div>
+    
+    <div class="controls">
+        <div class="control-group">
+            <label for="background-select">Background:</label>
+            <select id="background-select">
+                <option value="">Select Background</option>
+            </select>
+        </div>
+        <div class="control-group">
+            <label for="head-select">Head:</label>
+            <select id="head-select">
+                <option value="">Select Head</option>
+            </select>
+        </div>
+        <div class="control-group">
+            <label for="face-select">Face:</label>
+            <select id="face-select">
+                <option value="">Select Face</option>
+            </select>
+        </div>
+        <div class="control-group">
+            <label for="hair-select">Hair:</label>
+            <select id="hair-select">
+                <option value="">Select Hair</option>
+            </select>
+        </div>
+    </div>
+    <canvas id="avatar-canvas" width="300" height="300" style="display:none;"></canvas>
+    
+    <!-- Download button -->
+    <button id="download-btn">Download Avatar</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
