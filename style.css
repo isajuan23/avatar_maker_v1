@@ -1,18 +1,11 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-}
-
+/* Ensure the container is centered */
 #avatar-container {
     position: relative;
     width: 300px;
     height: 300px;
     margin-bottom: 20px;
-    border: 2px solid #ccc;
-    background-color: #fff;
+    border: 1px solid #ddd; /* Use a light border color that works with most themes */
+    background-color: inherit; /* Inherit the background color from the parent container */
 }
 
 .layer {
@@ -31,21 +24,20 @@ body {
 }
 
 .control-group {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* You can keep this to maintain separation */
 }
 
-/* Style for the download button */
 #download-btn {
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #ccc; /* Default disabled color */
-    border: none;
-    cursor: not-allowed; /* Default cursor when disabled */
-    color: #fff;
-    font-size: 16px;
+    padding: 0.5em 1em; /* Use relative padding instead of fixed pixel size */
+    margin-top: 10px;   /* Adjust margin to blend with theme spacing */
+    background-color: inherit; /* Inherit background color */
+    border: none; /* Remove border styling */
+    cursor: not-allowed; /* Keep this, as it indicates the button's state */
+    color: inherit; /* Inherit text color from theme */
+    font-size: inherit; /* Inherit font size from theme */
 }
 
 #download-btn:enabled {
-    background-color: #4CAF50; /* Active color when enabled */
+    background-color: inherit; /* Inherit active color */
     cursor: pointer;
 }
