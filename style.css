@@ -1,11 +1,19 @@
-/* Ensure the container is centered */
+/* Apply the Poppins font to all elements */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
 #avatar-container {
     position: relative;
     width: 300px;
     height: 300px;
     margin-bottom: 20px;
-    border: 1px solid #ddd; /* Use a light border color that works with most themes */
-    background-color: inherit; /* Inherit the background color from the parent container */
+    border: 2px solid #ccc;
+    background-color: #fff;
 }
 
 .layer {
@@ -24,20 +32,22 @@
 }
 
 .control-group {
-    margin-bottom: 10px; /* You can keep this to maintain separation */
+    margin-bottom: 10px;
 }
 
+/* Style for the download button */
 #download-btn {
-    padding: 0.5em 1em; /* Use relative padding instead of fixed pixel size */
-    margin-top: 10px;   /* Adjust margin to blend with theme spacing */
-    background-color: inherit; /* Inherit background color */
-    border: none; /* Remove border styling */
-    cursor: not-allowed; /* Keep this, as it indicates the button's state */
-    color: inherit; /* Inherit text color from theme */
-    font-size: inherit; /* Inherit font size from theme */
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #ccc; /* Default disabled color */
+    border: none;
+    cursor: not-allowed; /* Default cursor when disabled */
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif; /* Ensure the button also uses Poppins */
 }
 
 #download-btn:enabled {
-    background-color: inherit; /* Inherit active color */
+    background-color: #0081F3; /* Active color when enabled */
     cursor: pointer;
 }
